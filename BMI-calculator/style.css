@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 3.5rem;
+  margin-bottom: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e8e8e8;
+  height: 100vh;
+  justify-content: center;
+}
+
+.middle {
+  display: flex;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.subheading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #646464;
+}
+
+.in-brackets {
+  font-size: 1rem;
+}
+
+.left-input,
+.right-input {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+input {
+  font-family: "Roboto", sans-serif;
+  border: 0;
+  width: 200px;
+  font-size: 6rem;
+  text-align: center;
+}
+
+input,
+textarea {
+  background-color: #e8e8e8;
+}
+
+.calculate-button {
+  background-color: #646464;
+  color: #e8e8e8;
+  font-weight: 700;
+  width: 300px;
+  height: 60px;
+  border-radius: 30px;
+  font-size: 2rem;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.BMI {
+  font-family: "Roboto", sans-serif;
+  border: 0;
+  width: 300px;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 700;
+  color: rgb(180, 20, 20);
+  margin-top: 9px;
+}
+
+/*Anything outside of media queries is for MOBILE
+  This is Mobile first approach.
+*/
+
+/* Smartphones */
+@media (max-width: 390px) {
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .subheading {
+    font-size: 1rem;
+  }
+
+  input {
+    font-size: 4rem;
+  }
+
+  .middle {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .subheading {
+    font-size: 1rem;
+  }
+
+  input {
+    font-size: 5rem;
+  }
+}
